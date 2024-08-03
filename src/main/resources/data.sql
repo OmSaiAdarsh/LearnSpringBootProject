@@ -1,0 +1,1 @@
+Insert INTO product( name, description, category, brand, price, quantity, is_Available, release_Date) values ('Iphone', 'Costly Phone', 'Mobile', 'Apple', 12345, 10, true, '2024-04-15');
