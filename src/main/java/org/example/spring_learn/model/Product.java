@@ -27,8 +27,14 @@ public class Product {
     private String brand;
     private BigDecimal price;
     private int quantity;
-    private boolean isAvailable;
+    private boolean available;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date releaseDate;
+
+    public String toString(){
+        return "Product [id=" + id + ", name=" + name + ", description=" + description + ", category=" + category
+                + ", brand=" + brand + ", price=" + price + ", quantity=" + quantity + ", available=" + available
+                + ", releaseDate=" + releaseDate + "]";
+    }
 
 }
